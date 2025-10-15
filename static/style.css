@@ -1,0 +1,363 @@
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+nav{
+    font-family: 'Ubuntu','sans-serif';
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers menu items horizontally */
+    list-style: none;
+    height: 100px;
+    background-color: white;
+    color: rgb(2, 10, 17);
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Logo */
+.brand {
+    position: absolute;       /* keep logo left-aligned */
+    left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.brand img{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Menu items */
+.nav-link {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+.nav-link a:hover {
+    color: #8858e8;  /* hover effect */
+}
+/* Active page */
+.nav-link.active a {
+    color: #8858e8;
+    font-weight: bold;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
+
+/* Left side (text) */
+.hero-left {
+    flex: 1; /* This is correct for a 50/50 split */
+    display: flex; /* We still need this to center the content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color:#f7f3fd;/*#b8e858;*/
+}
+
+/* New: Inner div for text content */
+.hero-content {
+    max-width: 80%; /* Limit the width of the content */
+    text-align: left;
+    padding: 0 40px; /* Adjust padding as needed, or remove if not desired */
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #0a0317;
+    margin-bottom: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #0a0317;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background-color: #8858e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #6a3bd4;
+}
+
+/* Right side (image covers area) */
+.hero-right {
+    flex: 1; /* This is also correct */
+    background: url('food.jpg') center/cover no-repeat;
+}
+
+/*===== Features Section===== */
+#features {
+  padding: 60px 20px;
+  background-color: #f9fafc;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #6a4ff6;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/*Tips section*/
+#tips-blog {
+    background-color: #f7f3fd;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#tips-blog h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.tip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+    border-bottom: 2px solid #8858e8;
+}
+
+.tip-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.tip-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.tip-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tip-content a {
+    text-decoration: none;
+    color: #8858e8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.tip-content a:hover {
+    color: #6a3bd4;
+}
+
+/*===== Diet planner Section===== */
+#diet-planner {
+    background-color: #f7f3fd; /* You can change this color to any value you want */
+   
+}
+#diet-planner h2 {
+    background-color: #f7f3fd;
+    font-size:30px;
+    color: #8858e8; /* Change this to your desired color */
+    text-align: center;
+    margin-top: 30px;
+}
+body {
+    background-color: #f7f3fd; /* Or use the hex code #FFFFFF */
+}
+
+/* Planner container: split left & right */
+.planner-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    height: 500px;
+}
+
+/* Left div with background image */
+/* Left div with background image */
+.planner-left {
+    flex: 1;
+    background: url('images/bg3.jpg') center/cover no-repeat; /* Flask-served image */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* optional: make text readable */
+    position: relative;
+}
+
+
+/* Ensure form elements are above the overlay */
+.planner-left form {
+    position: relative;
+    z-index: 1;
+}
+
+/* Input fields for white background text (for readability) */
+/* Decrease the width of the input boxes and select menus */
+.form-group input,
+.form-group select {
+    background-color:  white;
+    color: black ;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    /* Add a max-width to control the length */
+    max-width: 150px; /* Adjust this value to your desired length */
+    
+}
+
+/* Change the color of the labels (e.g., Age, Gender) */
+.form-group label {
+    color: #333; /* A dark grey color for readability */
+    font-weight: bold; /* Optional: Makes the text stand out more */
+}
+/* Submit button: Centered, shorter, and with a modern style */
+.planner-left button {
+    display: block; /* Allows margin: auto to work for centering */
+    width: 60%; /* Adjusted width to make it shorter */
+    margin: 30px auto 0; /* Centers the button horizontally and adds top space */
+    padding: 12px 20px; /* Adds space inside the button for height and width */
+    background-color: #8858e8; /* A pleasant purple color */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 25px; /* Makes the corners rounded */
+    cursor: pointer; /* Changes the mouse cursor to a pointer when hovered */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* Smooth transition for the hover effect */
+}
+
+/* Add a hover effect for user feedback */
+.planner-left button:hover {
+    background-color: #7240c4; /* Darkens the color slightly when the mouse is over it */
+}
+
+
+/* Right div (output) */
+.planner-right {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #8858e8;
+}
+
+/* Form rows (2 inputs per row) */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+}
+
+/* Each input group */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button full width */
+.planner-left button {
+    width: 100%;
+    margin-top: 20px;
+}

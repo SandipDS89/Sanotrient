@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<body>
+    <nav>
+        <ul>
+        <!-- Logo -->
+        <li class="brand"><img src="{{ url_for('static', filename='Adobe Express - file12.png') }}" alt="Logo"></li>
+
+        <!-- Menu items -->
+        <li class="nav-link active"><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="nav-link"><a href="{{ url_for('diet_planner') }}">Diet Planner</a></li>
+        <li class="nav-link"><a href="{{ url_for('calculator') }}">Calculator</a></li>
+        <li class="nav-link"><a href="{{ url_for('ask_me') }}">Ask Me</a></li>
+        <li class="nav-link"><a href="{{ url_for('about') }}">About</a></li>
+        <li class="nav-link"><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+   <!-- Hero section below navbar -->
+    <section id="hero">
+        <div class="hero-left">
+            <div class="hero-content">
+                <h1>Eat Smart, Live Loud</h1>
+                <p>
+                    Personalized nutrition plans designed to support healthy weight gain, 
+                    effective weight loss, or steady maintenance — helping you stay fit while enjoying every meal. 
+                    Experience the power of mindful eating and smart guidance.
+                </p>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+        </div>
+    </section>
+
+        <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Personalized Plans</h3>
+                <p>Get meal plans tailored to your goals — weight gain, weight loss, or maintenance.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Healthy Recipes</h3>
+                <p>Discover tasty and nutritious recipes for breakfast, lunch, snacks, and dinner.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Smart Diet Calculator</h3>
+                <p>Quickly calculate your daily calories, macros, and ideal portions to support weight gain, weight loss, or maintenance.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Expert Tips</h3>
+                <p>Read evidence-based tips on fitness, nutrition, and healthy lifestyle habits.</p>
+            </div>
+        </div>
+    </section>
+
+         <!--Tips section-->
+    <section id="tips-blog">
+    <h2>Healthy Tips & Articles</h2>
+    <div class="tips-container">
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='water.jpg') }}" alt="Stay Hydrated">
+            <div class="tip-content">
+                <h3>Stay Hydrated</h3>
+                <p>Drinking water before meals helps control appetite and improves digestion.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='protein.jpg') }}" alt="Protein in Every Meal">
+            <div class="tip-content">
+                <h3>Protein in Every Meal</h3>
+                <p>Including protein in each meal supports muscle growth and repair.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='nuts2.png') }}" alt="Smart Snacking">
+            <div class="tip-content">
+                <h3>Smart Snacking</h3>
+                <p>Choose nuts or fruits over processed snacks for steady energy levels.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='balanced.jpg') }}" alt="Balanced Diet">
+            <div class="tip-content">
+                <h3>Balanced Diet</h3>
+                <p>Ensure every meal contains carbs, protein, and healthy fats for optimal health.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

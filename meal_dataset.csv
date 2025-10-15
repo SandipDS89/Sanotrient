@@ -1,0 +1,62 @@
+Food Item,Energy (kcal),Protein (g),Fat (g),Carbohydrates (g),Unit(g/ml),Category,Allergens,Subcategory,Meal Type,Portion,Serving Multiplier
+Milk,61,3.15,3.25,4.8,100,Veg,Lactose,Dairy & Alternatives,Breakfast,1 glass (250 ml),2.5
+Cheese,403,24.9,33.1,1.3,100,Veg,Lactose,Dairy & Alternatives,Breakfast,1 slice (20 g),0.2
+Yogurt,62,3.52,3.52,4.41,100,Veg,Lactose,Dairy & Alternatives,Breakfast,1 small cup (150 g),1.5
+Paneer,321,25,25,3.57,100,Veg,Lactose,Dairy & Alternatives,Lunch & Dinner,1 block (100 g),1
+Soy Milk,64,3.35,2.03,8.32,100,Veg,None,Dairy & Alternatives,Breakfast,1 glass (250 ml),2.5
+Greek Yogurt,100,10,3.8,7.8,100,Veg,Lactose,Dairy & Alternatives,Breakfast,1 cup (170 g),1.7
+Chicken Breast,165,31,3.6,0,100,Non-veg,None,Poultry/Meat,Lunch & Dinner,1 portion (150 g),1.5
+Mutton,192,14.05,11.58,7.44,100,Non-veg,None,Poultry/Meat,Lunch & Dinner,1 portion (150 g),1.5
+Salmon,232,19,15.5,0,100,Non-veg,Seafood,Seafood,Lunch & Dinner,1 fillet (120 g),1.2
+Eggs,136,13.6,9.09,0,100,Non-veg,None,Poultry/Meat,Breakfast,1 boiled egg (50 g),0.5
+Fish,210,28.89,9.71,0,100,Non-veg,Seafood,Seafood,Lunch & Dinner,1 fillet (120 g),1.2
+Chicken,188,24.7,9.41,1.18,100,Non-veg,None,Poultry/Meat,Lunch & Dinner,1 portion (150 g),1.5
+Prawn,73,13.6,0,0.91,100,Non-veg,Seafood,Seafood,Lunch & Dinner,1 serving (100 g),1
+Spinach,24,3.53,0,3.53,100,Veg,None,Vegetables,Lunch & Dinner,1 bowl (100 g),1
+Broccoli,24,2.35,0,4.71,100,Veg,None,Vegetables,Lunch & Dinner,1 bowl (100 g),1
+Carrot,44,0.87,0.24,9.68,100,Veg,None,Vegetables,Lunch & Dinner,1 medium (60 g),0.6
+Tomato,18,0.9,0.2,3.9,100,Veg,None,Vegetables,Lunch & Dinner,1 medium (70 g),0.7
+Corn,96,3.4,1.5,19,100,Veg,None,Vegetables,Lunch & Dinner,1 cob (100 g),1
+Sweet Potato,86,1.6,0.1,20.1,100,Veg,None,Vegetables,Lunch & Dinner,1 medium (130 g),1.3
+Peas,81,5.4,0.4,14.5,100,Veg,None,Vegetables,Lunch & Dinner,1 small bowl (80 g),0.8
+Mushroom,22,3.1,0.3,3.3,100,Veg,None,Vegetables,Lunch & Dinner,1 cup (70 g),0.7
+Cucumber,16,0.7,0.1,3.6,100,Veg,None,Vegetables,Lunch & Dinner,1 medium (100 g),1
+Grapes,69,0.72,0.16,18.1,100,Veg,None,Fruits,Snacks,1 handful (100 g),1
+Orange,47,0.94,0.12,11.75,100,Veg,None,Fruits,Snacks,1 medium (130 g),1.3
+Strawberry,32,0.67,0.3,7.7,100,Veg,None,Fruits,Snacks,5 pieces (80 g),0.8
+Banana,89,1.1,0.3,22.8,100,Veg,None,Fruits,Snacks,1 medium (120 g),1.2
+Apple,52,0.26,0.17,13.81,100,Veg,None,Fruits,Snacks,1 medium (150 g),1.5
+Pineapple,50,0.54,0.12,13.12,100,Veg,None,Fruits,Snacks,1 cup cubes (120 g),1.2
+Watermelon,30,0.61,0.15,7.55,100,Veg,None,Fruits,Snacks,1 wedge (200 g),2
+Papaya,43,0.47,0.26,10.82,100,Veg,None,Fruits,Snacks,1 cup cubes (140 g),1.4
+Pomegranate,83,1.67,1.17,18.7,100,Veg,None,Fruits,Snacks,1 small bowl (100 g),1
+Guava,68,2.55,0.95,14.3,100,Veg,None,Fruits,Snacks,1 medium (120 g),1.2
+Blueberry,57,0.74,0.33,14.5,100,Veg,None,Fruits,Snacks,1 handful (50 g),0.5
+Dates,277,1.8,0.2,75,100,Veg,None,Fruits,Breakfast,3 pieces (30 g),0.3
+Mango,60,0.82,0.38,15,100,Veg,None,Fruits,Snacks,1 medium (200 g),2
+Raisins,299,3.1,0.5,79.2,100,Veg,None,Dried Fruit,Breakfast,2 tbsp (20 g),0.2
+Bread,265,9,3.2,49,100,Veg,Gluten,Cereals & Grains,Breakfast,2 slices (60 g),0.6
+Quinoa,120,4.1,1.9,21.3,100,Veg,None,Cereals & Grains,Lunch & Dinner,1 cup cooked (185 g),1.85
+Pasta,131,5,1.1,25,100,Veg,Gluten,Cereals & Grains,Lunch & Dinner,1 cup cooked (140 g),1.4
+Rice,130,2.7,0.3,28.2,100,Veg,None,Cereals & Grains,Lunch & Dinner,1 cup cooked (200 g),2
+Oats,68,2.4,1.4,11.8,100,Veg,None,Cereals & Grains,Breakfast,1 bowl cooked (150 g),1.5
+Brown Rice,111,2.6,0.9,23,100,Veg,None,Cereals & Grains,Lunch & Dinner,1 cup cooked (200 g),2
+Chapati/Roti,297,9.8,3.7,59.6,100,Veg,Gluten,Cereals & Grains,Lunch&Dinner,1 medium (40 g),0.4
+Wheat Flour,364,10.3,1,76.3,100,Veg,Gluten,Cereals & Grains,Lunch & Dinner,2 rotis (100 g),1
+Lentils,116,9,0.4,20,100,Veg,None,Legumes & Pulses,Lunch & Dinner,1 bowl cooked (150 g),1.5
+Chickpeas,164,8.9,2.6,27.4,100,Veg,None,Legumes & Pulses,Lunch & Dinner,1 bowl cooked (150 g),1.5
+Red Lentils (Masoor Dal),352,25.8,1.1,60.1,100,Veg,None,Legumes & Pulses,Lunch & Dinner,1 bowl (150 g cooked),1.5
+Green Gram (Moong Dal  split),347,24,1.3,59,100,Veg,None,Legumes & Pulses,Lunch & Dinner,1 bowl (150 g cooked),1.5
+Kidney Beans (Rajma),333,24,0.8,60,100,Veg,None,Legumes & Pulses,Lunch & Dinner,1 bowl (150 g cooked),1.5
+Soybeans (raw),446,36.5,19.9,30.2,100,Veg,None,Legumes & Pulses,Lunch & Dinner,½ cup (50 g roasted),0.5
+Almonds,579,21.2,49.9,21.6,100,Veg,None,Nuts & Seeds,Snacks,10 pieces (20 g),0.2
+Cashews,553,18.2,43.9,30.2,100,Veg,None,Nuts & Seeds,Snacks,8 pieces (20 g),0.2
+Walnuts,654,15.2,65.2,13.7,100,Veg,None,Nuts & Seeds,Snacks,5 halves (20 g),0.2
+Peanuts,567,25.8,49.2,16.1,100,Veg,None,Nuts & Seeds,Snacks,2 tbsp (28 g),0.28
+Sunflower Seeds,584,20.8,51.5,20,100,Veg,None,Nuts & Seeds,Snacks,2 tbsp (20 g),0.2
+Chia Seeds,486,16.5,30.7,42.1,100,Veg,None,Nuts & Seeds,Snacks,1 tbsp (12 g),0.12
+Flaxseeds,534,18.3,42.2,28.9,100,Veg,None,Nuts & Seeds,Snacks,1 tbsp (12 g),0.12
+Honey,304,0.3,0,82.4,100,Veg,None,others,Breakfast,1 tbsp (15 g),0.15
+Coconut Milk,230,2.3,24.3,6.3,100,Veg,None,others,Breakfast,1 cup (200 ml),2
+Tofu,76,8,4.8,1.9,100,Veg,None,others,Lunch & Dinner,1 block (100 g),1
+Egg White,52,10.9,0.2,0.7,100,Non-veg,None,Poultry/Meat,Breakfast,3 egg whites (100 g),1

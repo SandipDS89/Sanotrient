@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<body>
+    <nav>
+        <ul>
+        <!-- Logo -->
+        <li class="brand"><img src="{{ url_for('static', filename='Adobe Express - file12.png') }}" alt="Logo"></li>
+
+        <!-- Menu items -->
+        <li class="nav-link active"><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="nav-link"><a href="{{ url_for('diet_planner') }}">Diet Planner</a></li>
+        <li class="nav-link"><a href="{{ url_for('calculator') }}">Calculator</a></li>
+        <li class="nav-link"><a href="{{ url_for('ask_me') }}">Ask Me</a></li>
+        <li class="nav-link"><a href="{{ url_for('about') }}">About</a></li>
+        <li class="nav-link"><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+<section id="diet-planner">
+    <h2>Personalized Diet Recommendation</h2>
+    <div class="planner-container">
+
+        <!-- Left side: Input form -->
+        <div class="planner-left" >
+            <form action="{{ url_for('diet_planner') }}" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Age (years):</label>
+                        <input type="number" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <select name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Weight (kg):</label>
+                        <input type="number" name="weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Height (cm):</label>
+                        <input type="number" name="height" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Goal:</label>
+                        <select name="goal" required>
+                            <option value="weight_loss">Weight Loss</option>
+                            <option value="weight_gain">Weight Gain</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Diet Preference:</label>
+                        <select name="preference" required>
+                            <option value="veg">Veg</option>
+                            <option value="non-veg">Non-Veg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Activity Level:</label>
+                        <select name="activity" required>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="active">Active</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Allergens:</label>
+                        <select name="allergen" required>
+                            <option value="none">None</option>
+                            <option value="lactose">Lactose</option>
+                            <option value="gluten">Gluten</option>
+                            <option value="seafood">Seafood</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Get Recommendation</button>
+            </form>
+        </div>
+
+        <!-- Right side: Output -->
+        <div class="planner-right">
+            {% if recommendation %}
+            <div class="recommendation">
+                <h3>Your Diet Recommendation:</h3>
+                <div class="recommendation-content">
+                    {{ recommendation|safe }}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+</section>
+
+
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
